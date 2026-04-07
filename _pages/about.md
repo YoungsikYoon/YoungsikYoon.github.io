@@ -12,7 +12,7 @@ profile:
 education: true
 selected_papers: true # includes a list of papers marked as "selected={true}"
 experience: true
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 # latest_posts:
 #   enabled: false
@@ -27,4 +27,4 @@ Previously, I was a research intern at Microsoft Research Asia (MSRA), mentored 
 My research focuses on efficient exploration strategies in reinforcement learning.
 I am interested in applying these ideas across diverse domains, including deep RL, robotics, LLMs, model architectures, and broadly in machine learning systems.
 
-You can reach me at ysyoon97@postech.ac.kr.
+You can reach me at <a href="mailto:ysyoon97@postech.ac.kr"><i class="fa-solid fa-envelope"></i></a> &nbsp; <a href="https://scholar.google.com/citations?user=s82gfdAAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &nbsp; <a href="https://www.linkedin.com/in/youngsik-yoon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
