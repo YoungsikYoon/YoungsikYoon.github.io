@@ -109,7 +109,16 @@
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-    {% if entry.type == 'article' %}
+    {% assign is_preprint = false %}
+    {% if entry.type == 'article' and entry.journal %}
+      {% assign journal_downcase = entry.journal | downcase | strip %}
+      {% if journal_downcase == 'preprint' %}
+        {% assign is_preprint = true %}
+      {% endif %}
+    {% endif %}
+    {% if is_preprint %}
+      {% capture entrytype %}<em>Preprint</em>{% endcapture %}
+    {% elsif entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
@@ -121,7 +130,8 @@
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
-    {% if entry.year %}
+    {% assign entryyear = "" %}
+    {% if entry.year and is_preprint == false %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
     {% if entry.location %}
