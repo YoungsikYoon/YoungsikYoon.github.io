@@ -130,7 +130,7 @@
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
-    {% assign entryyear = "" %}
+    {% assign entryyear = '' %}
     {% if entry.year and is_preprint == false %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
