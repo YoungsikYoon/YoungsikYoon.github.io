@@ -20,11 +20,6 @@ social: false # includes social icons at the bottom of the page
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I'm Youngsik Yoon, a Ph.D. student in the POSTECH Machine Learning Lab, advised by Professor Jungseul Ok.
-I received my B.S. in Computer Science and Engineering & Mathematics from POSTECH.
-Previously, I was a research intern at Microsoft Research Asia (MSRA), mentored by Wei Chen and Siwei Wang.
-
-My research focuses on efficient exploration strategies in reinforcement learning.
-I am interested in applying these ideas across diverse domains, including deep RL, robotics, LLMs, model architectures, and broadly in machine learning systems.
+I am a Ph.D. candidate in Computer Science and Engineering at POSTECH, advised by Prof. Jungseul Ok, and expect to graduate in February 2027. I study how to spend computation where it matters: which experts a mixture-of-experts language model should route to, when an LLM should plan at test time, and where a reinforcement learning agent should explore. Previously, I was a research intern at Microsoft Research Asia, mentored by Wei Chen and Siwei Wang.
 
 You can reach me at <a href="mailto:ysyoon97@postech.ac.kr"><i class="fa-solid fa-envelope"></i></a> &nbsp; <a href="https://scholar.google.com/citations?user=s82gfdAAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &nbsp; <a href="https://www.linkedin.com/in/youngsik-yoon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
